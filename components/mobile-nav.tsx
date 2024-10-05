@@ -35,9 +35,10 @@ export default function MobileNav() {
           className="flex items-center"
           onOpenChange={setIsOpen}
         >
-          <Icons.logoS className="w-7 h-7 -ml-2" />
-          <Icons.logoP className="w-7 h-7" />
-          <Icons.logoX className="mr-2 w-7 h-7 stroke-red-500" />
+          <Icons.logoS className="mr-2 w-7 h-7 -ml-2 dark:stroke-red-400" />
+          <span className="font-bold">{siteConfig.name}</span>
+          {/* <Icons.logoP className="w-7 h-7" />
+          <Icons.logoX className="mr-2 w-7 h-7 stroke-red-500" /> */}
         </MobileLink>
         <div className="flex flex-col gap-3 mt-8">
           <MobileLink
