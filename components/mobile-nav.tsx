@@ -64,7 +64,7 @@ export default function MobileNav() {
             <div
               className={cn(buttonVariants({ variant: "ghost" }), "w-10 px-0")}
             >
-              <Icons.gitHub className="w-5 h-5 -ml-2 mt-8" />
+              <Icons.gitHub className="w-4 h-4 -ml-2 mt-8" />
               <span className="sr-only ">GitHub</span>
             </div>
           </Link>
@@ -76,7 +76,7 @@ export default function MobileNav() {
             <div
               className={cn(buttonVariants({ variant: "ghost" }), "w-10 px-0")}
             >
-              <Icons.twitter className="w-5 h-5 -ml-2" />
+              <Icons.twitter className="w-4 h-4 -ml-2" />
               <span className="sr-only ">X</span>
             </div>
           </Link>

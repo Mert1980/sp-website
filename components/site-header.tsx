@@ -5,6 +5,7 @@ import { buttonVariants } from "./ui/button";
 import { Icons } from "./icons";
 import { MainNav } from "./main-nav";
 import MobileNav from "./mobile-nav";
+import { ModToggle } from "./mod-toggle";
 
 export function SiteHeader() {
   return (
@@ -43,7 +44,7 @@ export function SiteHeader() {
                 <span className="sr-only ">X</span>
               </div>
             </Link>
-
+            <ModToggle />
             <MobileNav />
           </nav>
         </div>
