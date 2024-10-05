@@ -23,7 +23,7 @@ export const Icons = {
   logoP: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="icon icon-tabler icon-tabler-square-rounded-letter-s"
+      className="icon icon-tabler icon-tabler-square-rounded-letter-p"
       width="44"
       height="44"
       viewBox="0 0 24 24"
@@ -35,7 +35,27 @@ export const Icons = {
       {...props}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1" />
+      <path d="M10 12h2a2 2 0 1 0 0 -4h-2v8" />
+      <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+    </svg>
+  ),
+  logoX: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="icon icon-tabler icon-tabler-square-rounded-letter-x"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="#2c3e50"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      {...props}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 8l4 8" />
+      <path d="M10 16l4 -8" />
       <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
     </svg>
   ),
