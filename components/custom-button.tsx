@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Marker from "./marker";
+import Marker from "./Marker";
 
 import React from "react";
 import Image from "next/image";
@@ -41,14 +41,14 @@ const CustomButton: React.FC<ButtonProps> = ({
         </span>
       </span>
 
-      <span className="glow-before glow-after" />
+      <span className="light-glow-before dark:glow-before light-glow-after dark:glow-after" />
     </>
   );
 
   return href ? (
     <a
       className={cn(
-        "relative p-0.5 g5 rounded-2xl shadow-500 group",
+        "relative p-0.5 dark:g5 g1 rounded-2xl shadow-500 group",
         containerClassName
       )}
       href={href}
@@ -58,7 +58,7 @@ const CustomButton: React.FC<ButtonProps> = ({
   ) : (
     <button
       className={cn(
-        "relative p-0.5 g5 rounded-2xl shadow-500 group",
+        "relative p-0.5 dark:g5 g1 rounded-2xl shadow-500 group",
         containerClassName
       )}
       onClick={onClick}

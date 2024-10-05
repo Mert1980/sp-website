@@ -19,7 +19,7 @@ const Hero = () => {
             <span className="dark:text-p1 text-purple-800">AI</span> solutions
             that are tailored to their needs.
           </p>
-          <Link href="/services" className="btn btn-primary">
+          <Link href="/services">
             <CustomButton icon="/images/zap.svg">Services</CustomButton>
           </Link>
         </div>

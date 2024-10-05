@@ -1,6 +1,7 @@
 import Image from "next/image";
 import * as runtime from "react/jsx-runtime";
 import { Callout } from "./callout";
+import { CenteredContainer } from "./centered-container";
 
 const useMDXComponents = (code: string) => {
   const fn = new Function(code);
@@ -10,6 +11,7 @@ const useMDXComponents = (code: string) => {
 const components = {
   Image,
   Callout,
+  CenteredContainer,
 
   // You can add custom taxonomy from shadcn taxonomy if you want
 };

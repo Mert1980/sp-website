@@ -1,4 +1,7 @@
 import { defineConfig, defineCollection, s } from "velite";
+import rehypeSlug from "rehype-slug";
+import rehtpyPrettyCode, { rehypePrettyCode } from "rehype-pretty-code";
+import rehypeAutoLinkHeadings from "rehype-autolink-headings";
 
 // /blog/hello-world
 const computedFields = <T extends { slug: string }>(data: T) => ({
@@ -32,7 +35,20 @@ export default defineConfig({
   },
   collections: { posts },
   mdx: {
-    rehypePlugins: [],
+    rehypePlugins: [
+      rehypeSlug,
+      [rehypePrettyCode, { theme: "one-dark-pro" }],
+      [
+        rehypeAutoLinkHeadings,
+        {
+          behavior: "wrap",
+          properties: {
+            className: ["subheading-anchor"],
+            ariaLabel: "Link to section",
+          },
+        },
+      ],
+    ],
     remarkPlugins: [],
   },
 });

@@ -22,7 +22,8 @@ export function Callout({
             type === "danger",
           "border-yellow-700 bg-yellow-50 dark:border-yellow-100 dark:bg-yellow-700":
             type === "warning",
-          "border-green-800 bg-green-50 dark:prose": type === "success",
+          "border-green-800 bg-green-50 dark:bg-green-800 dark:border-green-100":
+            type === "success",
         }
       )}
       {...props}
