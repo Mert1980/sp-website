@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Marker from "./Marker";
+import Marker from "./marker";
 
 import React from "react";
 import Image from "next/image";
