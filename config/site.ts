@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "SPX",
+  name: "PX",
   url: "https://spx.network",
   description:
     "SPX is a digital transformation company that helps businesses grow and innovate.",

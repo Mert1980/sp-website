@@ -11,6 +11,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { buttonVariants } from "./ui/button";
+import Image from "next/image";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,8 +36,17 @@ export default function MobileNav() {
           className="flex items-center"
           onOpenChange={setIsOpen}
         >
-          <Icons.logoS className="mr-2 w-7 h-7 -ml-2 dark:stroke-red-400" />
-          <span className="font-bold">{siteConfig.name}</span>
+          <Image
+            src="/images/sp-logo-mini.png"
+            alt={siteConfig.name}
+            width={40}
+            height={20}
+            className="-ml-1 mr-2"
+          />
+          <Icons.logoS className="w-7 h-7 dark:stroke-purple-400 stroke-gray-900" />
+          <span className="font-bold dark:text-purple-400">
+            {siteConfig.name}
+          </span>
           {/* <Icons.logoP className="w-7 h-7" />
           <Icons.logoX className="mr-2 w-7 h-7 stroke-red-500" /> */}
         </MobileLink>
